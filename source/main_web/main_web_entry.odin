@@ -34,7 +34,7 @@ web_init :: proc "c" () {
 @export
 web_update :: proc "c" () {
 	context = web_context
-	game.game_update()
+	game.game_update_web()
 }
 
 @export

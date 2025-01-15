@@ -108,6 +108,12 @@ game_update :: proc() -> bool {
 }
 
 @(export)
+game_update_web :: proc() {
+	update()
+	draw()
+}
+
+@(export)
 game_init_window :: proc() {
 	rl.SetConfigFlags({.WINDOW_RESIZABLE, .VSYNC_HINT})
 	rl.InitWindow(1280, 720, "Odin + Raylib + Hot Reload template!")
